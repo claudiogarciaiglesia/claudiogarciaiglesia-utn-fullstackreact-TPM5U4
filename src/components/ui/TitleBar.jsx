@@ -1,11 +1,13 @@
 import React from 'react'
+import { Search } from './Search';
 import './TitleBar.css';
 
 export const TitleBar = ({ title }) => {
     return (
         <div>
-            <div>
-                <h1 className="title-bar">{title}</h1>
+            <div className="title-bar" >
+                <span className="title">{title}</span>
+                <Search/>
             </div>
         </div>
     )
