@@ -1,42 +1,99 @@
-.web-page {
+/* .web-page {
     max-width: 960px;
     margin: auto;
+} */
+
+body {
+    min-width: 970px;
 }
 
 .title-bar {
-    /* background-color: rgb(255, 221, 206); */
+    background-image: linear-gradient(to top left, #1a2f69, #4073ff);
+    /* background-color: #24408E; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: left;
+    /* width: 100%; */
+    height: 9rem;
+    /* justify-content: left; */
     align-items: center;
-    padding: 0 10px;
+    /* justify-content: center; */
+    padding: 0 150px;
 }
 
 .title {
-    /* margin: 0 30px; */
-    font-size: 2em;
+    margin: 0 30px 0 0;
+    font-size: 2.5em;
     /* text-align: center; */
-    font-family: fantasy;
     font-weight: bolder;
     /* width:fit-content;*/
     white-space: nowrap;
+    flex: 1;
 }
 
-.search-input {
-    max-width: 20%;
-    height: 70%;
-    /* flex-basis: initial; */
-    /* flex-shrink: 0; */
+.search-input-container {
+    max-width: 500px;
     min-width: 200px;
+    flex: 2;
 }
 
-.search-input div {
-    /* display: inline-block; */
+.catalogue-container {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
 }
 
-.menu span {
-    font-size: 1.5rem;
-    height: 3em;
+.booklist-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.bookrow-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    height: 100px;
+    /* justify-content: space-evenly; */
+}
+
+.book-description {
+    background-color: khaki;
+    width: 50;
+}
+
+.book-cell {
+    margin: 0 10px;
+    text-align: center;
+    /* overflow-wrap: initial; */
+}
+
+.book-id-cell {
+    width: 5%;
+}
+
+.book-name-cell {
+    width: 25%
+}
+
+.book-description-cell {
+    /* flex-grow:1; */
+    /* flex-basis: 25rem; */
+    width: 70%;
+    word-wrap: unset;
+    word-break: unset;
+    overflow-wrap: unset;
+    white-space: unset;
+    overflow: auto;
+    text-align: left;
+}
+
+.book-category-cell {
+    width: 20%;
+}
+
+.book-borrowed-cell {
+    flex-grow: 1;
 }
